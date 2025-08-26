@@ -1,13 +1,40 @@
-// State selector redirect logic
-document.getElementById("goBtn").addEventListener("click", function() {
-  const state = document.getElementById("state").value;
+// Custom dropdown logic
+const dropdown = document.getElementById("stateDropdown");
+const selected = dropdown.querySelector(".dropdown-selected");
+const options = dropdown.querySelectorAll(".dropdown-options div");
+const goBtn = document.getElementById("goBtn");
 
-  if (!state) {
+let selectedState = "";
+
+// Toggle dropdown
+selected.addEventListener("click", () => {
+  dropdown.classList.toggle("open");
+});
+
+// Select option
+options.forEach(option => {
+  option.addEventListener("click", () => {
+    selected.textContent = option.textContent;
+    selectedState = option.getAttribute("data-value");
+    dropdown.classList.remove("open"); // close after selecting
+  });
+});
+
+// Close dropdown if clicked outside
+document.addEventListener("click", e => {
+  if (!dropdown.contains(e.target)) {
+    dropdown.classList.remove("open");
+  }
+});
+
+// Go button redirect
+goBtn.addEventListener("click", () => {
+  if (!selectedState) {
     alert("Please select a state first!");
     return;
   }
 
-  switch (state) {
+  switch (selectedState) {
     case "texas":
     case "oklahoma":
       window.location.href = "https://fireworksworldstore.com";
