@@ -11,10 +11,11 @@ html, body {
   overflow: hidden;
 }
 
+/* Body as column layout */
 body {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;   /* stack header, content, footer */
+  min-height: 100vh;
   background: url("images/modern-diwali-bg.jpg") no-repeat center center/cover;
   position: relative;
   font-family: 'Poppins', Arial, sans-serif;
@@ -42,6 +43,7 @@ body {
 
 /* ---------- Content Wrapper ---------- */
 .content {
+  flex: 1;   /* pushes footer down */
   position: relative;
   z-index: 2;
   padding: 20px;
@@ -50,6 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;  /* centers logos/text in middle */
 }
 
 /* ---------- Header ---------- */
@@ -186,19 +189,18 @@ body {
 
 /* ---------- Footer ---------- */
 .site-footer {
-  margin-top: auto;
-  padding: 40px 20px;
+  padding: 30px 20px;
   text-align: center;
   position: relative;
   z-index: 2;
-  background: transparent;
+  background: rgba(0,0,0,0.4); /* subtle background for separation */
+  border-top: 1px solid rgba(255,204,51,0.6);
 }
 
 .footer-content {
   max-width: 900px;
   margin: 0 auto;
-  border-top: 1px solid rgba(255,204,51,0.6);
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 .footer-brand {
