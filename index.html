@@ -1,29 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diwali Fireworks Deals 2024 | Bellino Fireworks</title>
-  <meta name="description" content="Shop the best Diwali fireworks deals with Bellino! Sparklers, fountains, assortments & more. Celebrate the Festival of Lights with safe, colorful fireworks.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO Schema -->
+  <!-- Strong SEO -->
+  <title>Diwali Fireworks 2024 | Buy Diwali Fireworks in Texas, Oklahoma & Arizona</title>
+  <meta name="description" content="Shop Diwali fireworks for the Festival of Lights. Available in Texas, Oklahoma & Arizona: sparklers, fountains, assortments and family packs. Safe, high-quality Diwali fireworks from Bellino." />
+  <link rel="canonical" href="https://www.diwalifireworks.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Diwali Fireworks 2024 | Texas • Oklahoma • Arizona" />
+  <meta property="og:description" content="Safe, high-quality Diwali fireworks—sparklers, fountains & assortments. Serving Texas, Oklahoma & Arizona." />
+  <meta property="og:url" content="https://www.diwalifireworks.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.diwalifireworks.com/images/modern-diwali-bg.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD Store -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Store",
-    "name": "Bellino Fireworks",
-    "description": "Celebrate Diwali 2024 with the best fireworks deals. Bellino offers sparklers, fountains, assortments and aerial fireworks for the Festival of Lights.",
-    "url": "https://bellinofireworks.com",
-    "logo": "https://bellinofireworks.com/images/bellino-logo.png",
+    "name": "Diwali Fireworks by Bellino",
+    "url": "https://www.diwalifireworks.com/",
+    "description": "Diwali fireworks for the Festival of Lights—sparklers, fountains, assortments and family packs. Serving Texas, Oklahoma and Arizona.",
+    "logo": "https://www.diwalifireworks.com/images/bellino-logo.png",
+    "image": "https://www.diwalifireworks.com/images/modern-diwali-bg.jpg",
     "sameAs": [
       "https://www.facebook.com/bellinofireworks",
       "https://www.instagram.com/bellinofireworks"
     ],
-    "keywords": "Diwali fireworks, Diwali fireworks deals, buy fireworks near me, Festival of Lights fireworks, sparklers, fountains, assortments"
+    "areaServed": [
+      {"@type":"AdministrativeArea","name":"Texas"},
+      {"@type":"AdministrativeArea","name":"Oklahoma"},
+      {"@type":"AdministrativeArea","name":"Arizona"}
+    ],
+    "brand": {"@type":"Brand","name":"Bellino Fireworks"}
   }
   </script>
 
-  <link rel="stylesheet" href="styles.css">
+  <!-- JSON-LD: Website + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url":"https://www.diwalifireworks.com/",
+    "name":"Diwali Fireworks",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://www.diwalifireworks.com/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD FAQ (matches visible accordion below) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Which Diwali fireworks are best for families?",
+        "acceptedAnswer":{"@type":"Answer","text":"Sparklers, fountains, and family assortments are the safest, most popular picks for at-home Diwali celebrations. They offer bright, colorful effects with minimal setup."}
+      },
+      {
+        "@type":"Question",
+        "name":"Where can I buy Diwali fireworks near me?",
+        "acceptedAnswer":{"@type":"Answer","text":"We serve Texas, Oklahoma and Arizona. Use the state buttons to shop the correct destination for your area."}
+      },
+      {
+        "@type":"Question",
+        "name":"Are Bellino’s Diwali fireworks safe?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes—our products meet safety standards, and usage tips are included on all packaging. Always follow local laws and handle responsibly."}
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- Header -->
@@ -34,42 +91,54 @@
   <!-- Background overlay -->
   <div class="overlay"></div>
 
-  <!-- Main Content -->
+  <!-- HERO (clean and minimal) -->
   <main class="content">
-    <!-- Logos -->
     <div class="logo-container">
-      <img src="images/bellino-logo.png" alt="Bellino Fireworks Logo - Best Diwali Fireworks Deals 2024" class="logo logo-bellino">
-      <img src="images/fireworks-world-logo.png" alt="Fireworks World Logo - Festival of Lights Fireworks Selection" class="logo logo-fw">
+      <img src="images/bellino-logo.png" alt="Bellino Fireworks Logo" class="logo logo-bellino" loading="eager" width="280" height="140">
+      <img src="images/fireworks-world-logo.png" alt="Fireworks World Logo" class="logo logo-fw" loading="eager" width="220" height="110">
     </div>
 
-    <!-- Headline -->
     <h1 class="headline">Celebrate Brighter This Diwali</h1>
+    <p class="subheadline">
+      Diwali Fireworks in Texas, Oklahoma &amp; Arizona — sparklers, fountains &amp; assortments for the Festival of Lights
+    </p>
 
-    <!-- State Selector (moved here) -->
-    <div class="state-select">
-      <div class="custom-dropdown" id="stateDropdown">
-        <div class="dropdown-selected">Select a state</div>
-        <div class="dropdown-options">
-          <div data-value="texas">Texas</div>
-          <div data-value="oklahoma">Oklahoma</div>
-          <div data-value="arizona">Arizona</div>
+    <!-- State CTAs -->
+    <nav class="state-cta" aria-label="Shop Diwali fireworks by state">
+      <a class="pill-link" href="https://fireworksworldstore.com" title="Buy Diwali fireworks in Texas">Diwali Fireworks in Texas</a>
+      <a class="pill-link" href="https://fireworksworldstore.com" title="Buy Diwali fireworks in Oklahoma">Diwali Fireworks in Oklahoma</a>
+      <a class="pill-link" href="https://bellinofireworks.com" title="Buy Diwali fireworks in Arizona">Diwali Fireworks in Arizona</a>
+    </nav>
+
+    <!-- Divider -->
+    <hr class="divider" aria-hidden="true">
+
+    <!-- Compact SEO accordions -->
+    <section class="accordions">
+      <details class="acc">
+        <summary>About Diwali Fireworks in Texas</summary>
+        <p>Celebrating Diwali in Texas? Find <strong>Diwali fireworks in Texas</strong> including sparklers, fountains, family assortments and more. Serving Dallas–Fort Worth, Houston, Austin, San Antonio and beyond.</p>
+      </details>
+
+      <details class="acc">
+        <summary>About Diwali Fireworks in Oklahoma</summary>
+        <p>For families celebrating in Oklahoma, our <strong>Diwali fireworks in Oklahoma</strong> lineup covers sparklers, cones, fountains and assortments. Plan your Festival of Lights around Oklahoma City, Tulsa and nearby towns.</p>
+      </details>
+
+      <details class="acc">
+        <summary>About Diwali Fireworks in Arizona</summary>
+        <p>In Arizona, enjoy bright, colorful celebrations with <strong>Diwali fireworks in Arizona</strong>—from sparklers to fountains and family packs. Serving Phoenix, Tempe, Chandler, Gilbert, Scottsdale and more.</p>
+      </details>
+
+      <details class="acc">
+        <summary>Diwali Fireworks FAQs</summary>
+        <div class="faq-inner">
+          <p><strong>Which Diwali fireworks are best for families?</strong><br>Sparklers, fountains, and family assortments are safe, popular picks for at-home Diwali.</p>
+          <p><strong>Where can I buy Diwali fireworks near me?</strong><br>We serve <strong>Texas, Oklahoma and Arizona</strong>. Use the state buttons above to shop.</p>
+          <p><strong>Are Bellino’s Diwali fireworks safe?</strong><br>Yes—our products meet safety standards, with usage tips on every package. Always follow local laws.</p>
         </div>
-      </div>
-      <button id="goBtn">Go</button>
-    </div>
-
-    <!-- SEO section -->
-    <h2 class="seo-heading">Best Fireworks for Diwali Celebrations</h2>
-    <p class="seo-text">
-      Diwali, the Festival of Lights, is a time for joy, family, and celebration. 
-      At Bellino Fireworks, we offer the <strong>best fireworks for Diwali</strong> — from sparklers and fountains to assortments and aerial shows — all designed to make your festival unforgettable.
-    </p>
-
-    <h2 class="seo-heading">Unbeatable Diwali Fireworks Deals</h2>
-    <p class="seo-text">
-      For generations, families have trusted Bellino for <strong>Diwali fireworks deals</strong> that combine safety, quality, and affordability. 
-      Whether you’re searching for <em>“buy Diwali fireworks near me”</em> or want family packs with sparklers, we’ve got the widest selection for your celebrations.
-    </p>
+      </details>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -79,11 +148,9 @@
       <p class="footer-tagline">Wishing you a safe & sparkling Diwali!</p>
       <p class="footer-copy">
         © 2024 Bellino Fireworks · Your trusted source for 
-        <a href="https://bellinofireworks.com/diwali" class="seo-link">Diwali Fireworks Deals</a>
+        <a href="https://bellinofireworks.com/diwali" rel="noopener">Diwali Fireworks Deals</a>
       </p>
     </div>
   </footer>
-
-  <script src="scripts.js"></script>
 </body>
 </html>
